@@ -1,0 +1,29 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+par_raster|stem|9eaa9f1d2f817b3a|a251645091d123d5|ef379e5166e32c17|1686331940||t20194.7281173032s|s854b|854|rds|local|vector|||2.46||
+tp_poly|stem|b5283aa4be4d6551|5741c4747034e9dd|2c530c1562a7fbd1|394893144||t20195.8062522222s|s5462265b|5462265|rds|local|vector|||0.31||
+read_in_lakes|function|3b8ad629dceb6c2e
+tp_input|function|6d1686a99671d2c4
+waterbalance_in|function|d5a337e8a7c0db26
+parameter_readin|function|0ed26c8353bfb9a5
+tp_munge_sparrow|function|b4d9cd943a9ffd5f
+daymet_lake|function|b8331e2fb16454ad
+.Random.seed|object|f72533565d80afd8
+lightAtten|function|36575c0d5d426c77
+par_read|function|0b7ccdd6cbe365ae
+SPARROW_catchments|function|0bf49a4d8975bc54
+doc_input|function|8c07d39fe0a28b14
+fix_pacific|function|947a34f13e4dcc94
+st_centroid_within_poly|function|fed95851e498cbd4
+model_df|function|586361e2492e1e2b
+par_input|function|40042b0d36e747bb
+huisman|function|134447fc4004a051
+ODE_huisman|function|7b33e8c5ed060235
+HUC4|stem|ef0d112b5c8a3e39|c5037b121bfe0825|2c530c1562a7fbd1|-721380384||t20209.593922673s|s57b|57|rds|local|vector|||0||
+input_df|stem|db955435084d3baa|e8788e84e308ccd0|8b2380efd1d54048|-1321206975||t20209.5945936299s|s1041195b|1041195|rds|local|vector|||57.72|[1m[22mRemoved 2683 rows containing missing values or values outside the scale range (`geom_point()`).|
+water_input|stem|a075e3b1c1566d98|a627cb9534c1a1a8|10fc89ea24612522|-545476016||t20209.5952456465s|s222320b|222320|rds|local|vector|||55.78|st_centroid assumes attributes are constant over geometries. st_centroid does not give correct centroids for longitude/latitude data|
+lake_pt|stem|79a1379a005a7585|4bbab906623b5582|8e5c4cb1a830adad|-195998175||t20209.595253869s|s186356b|186356|rds|local|vector|||0.45|st_centroid assumes attributes are constant over geometries. st_centroid does not give correct centroids for longitude/latitude data|
+doc_in|stem|b271aa19885ce750|08c4c5a8c0c9c863|f1f543aff2c394cf|365560957||t20209.595255881s|s11056b|11056|rds|local|vector|||0.05||
+par_in|stem|842a9ea92ea2efb2|cc3a141191f89e7e|81837fb85fabbcf2|670818164||t20209.5952941503s|s7408b|7408|rds|local|vector|||3.22||
+tp_in|stem|a67b0d5c49023f97|05ce420250ef128d|3fb770793ba63811|1640809376||t20209.5957440504s|s10109b|10109|rds|local|vector|||38.66||
+mod_in|stem|1061ced949320d52|3c22056183dcbe37|8d43de58ceae48dd|1569074038||t20209.5957724004s|s251114b|251114|rds|local|vector|||1.83||
+ODE_output|stem|b3c020cf979fa289|36986f19dbe59711|b9790d7ceff09b02|1350204662||t20209.6213626758s|s116151b|116151|rds|local|vector|||2210.91||
