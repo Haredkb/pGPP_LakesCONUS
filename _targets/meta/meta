@@ -1,29 +1,94 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-par_raster|stem|9eaa9f1d2f817b3a|a251645091d123d5|ef379e5166e32c17|1686331940||t20194.7281173032s|s854b|854|rds|local|vector|||2.46||
-tp_poly|stem|b5283aa4be4d6551|5741c4747034e9dd|2c530c1562a7fbd1|394893144||t20195.8062522222s|s5462265b|5462265|rds|local|vector|||0.31||
-read_in_lakes|function|3b8ad629dceb6c2e
-tp_input|function|6d1686a99671d2c4
-waterbalance_in|function|d5a337e8a7c0db26
+ODE_output|stem|b3c020cf979fa289|36986f19dbe59711|b9790d7ceff09b02|1350204662||t20209.6213626758s|s116151b|116151|rds|local|vector|||2210.91||
+HUC4|stem|eb4fd43f45e7c381|c5037b121bfe0825|2c530c1562a7fbd1|-721380384||t20325.8483197015s|s57b|57|rds|local|vector|||0||
+input_df|stem|d5f207ae1e71e9ee|e8788e84e308ccd0|4ec91fc3a422c4f0|-1321206975||t20325.8488018783s|s1041192b|1041192|rds|local|vector|||39.9|Removed 2683 rows containing missing values or values outside the scale range (`geom_point()`).|
+water_input|stem|952568bf3badb5c1|749c520389207151|d3c2107d9991849c|-545476016||t20325.8492050524s|s222314b|222314|rds|local|vector|||34.72|st_centroid assumes attributes are constant over geometries. st_centroid does not give correct centroids for longitude/latitude data|
+lake_pt|stem|4ad26635e057d70a|4bbab906623b5582|ea7edfd0bd0d457c|-195998175||t20325.8492080127s|s186353b|186353|rds|local|vector|||0.14|st_centroid assumes attributes are constant over geometries. st_centroid does not give correct centroids for longitude/latitude data|
+doc_in|stem|b045f930b58c7396|08c4c5a8c0c9c863|20c9607af52e1d6d|365560957||t20325.8492087176s|s11062b|11062|rds|local|vector|||0.01||
+par_in|stem|159fc8d6582631a0|cc3a141191f89e7e|fc1111966300f4fe|670818164||t20325.8492476793s|s7409b|7409|rds|local|vector|||3.31||
+tp_in|stem|1707235c462742be|a8f3d94441d76678|0edf8f8c10142c95|1640809376||t20325.8495458775s|s10110b|10110|rds|local|vector|||25.6||
+mod_in|stem|717f2ddb09f4c25d|3c22056183dcbe37|9731000612a72935|1569074038||t20325.8495526735s|s251115b|251115|rds|local|vector|||0.47||
+par_raster_0401|stem|e46ce545ec25dbff|a251645091d123d5|ef379e5166e32c17|-200413844||t20326.528919048s|s908b|908|rds|local|vector|||0.87||
+par_raster_0402|stem|e46ce545ec25dbff|a251645091d123d5|ef379e5166e32c17|1124576576||t20326.5289207272s|s908b|908|rds|local|vector|||0.09||
+list_HUC4|stem|ef781a1a9f57e592|2a179b7317fe77f6|2c530c1562a7fbd1|-1345886901||t20326.5459647793s|s68b|68|rds|local|vector|||0||
+input_df_1301|stem|d5f207ae1e71e9ee|0686385ef3248545|49bdf93014af83f5|-34114317||t20326.6044120028s|s1041192b|1041192|rds|local|vector|||34.97|Removed 2683 rows containing missing values or values outside the scale range (`geom_point()`).|
+par_raster|stem|e46ce545ec25dbff|a251645091d123d5|ef379e5166e32c17|1686331940||t20326.6044291892s|s908b|908|rds|local|vector|||1.4||
+tp_poly|stem|31662393054db7a5|709eaddb9565dc7a|a9afa1a05e4fb356|394893144||t20326.604436175s|s5462265b|5462265|rds|local|vector|||0.06||
+water_input_1301|stem|952568bf3badb5c1|f4a147c3310bf4bd|96cb996709c46b1b|-1702192279||t20326.6048335011s|s222314b|222314|rds|local|vector|||34.24|st_centroid assumes attributes are constant over geometries. st_centroid does not give correct centroids for longitude/latitude data|
+lake_pt_1301|stem|4ad26635e057d70a|394b5ba0929c5fa5|86330ed37125bd97|-1109798636||t20326.6048365566s|s186353b|186353|rds|local|vector|||0.16|st_centroid assumes attributes are constant over geometries. st_centroid does not give correct centroids for longitude/latitude data|
+doc_in_1301|stem|b045f930b58c7396|36564428664b1f42|a5edfaf37913a61e|125338762||t20326.6048372739s|s11062b|11062|rds|local|vector|||0||
+par_in_1301|stem|159fc8d6582631a0|6a7b411ac22dca8f|8107e2254970b2bf|966488553||t20326.6048721189s|s7409b|7409|rds|local|vector|||2.97||
+tp_in_1301|stem|1707235c462742be|6d4be3920c674578|8082c42daa4c9f4e|851927748||t20326.6051436758s|s10110b|10110|rds|local|vector|||23.36||
+df_in_1301|stem|5852ee0aba8c9bbf|0bdae27aa09e9273|eaaa8b7a8b8884fc|-198609799||t20326.6051449838s|s251120b|251120|rds|local|vector|||0.02||
+df_in2_1301|stem|3c14df08574200fe|d8d4aee100890f1f|12c8bc0958daca77|-1664033169||t20326.6080523284s|s251139b|251139|rds|local|vector|||0||
+mod_in_1301|stem|06c1c725d4c89637|be4ec56e938ef746|81f647ecea55569b|-522270665||t20326.6086187774s|s251114b|251114|rds|local|vector|||0.56||
+ODE_output_1301|stem|539810b0ed6c1d04|770ab696f2aa15c4|d2e4400677732eaa|-1382656799||t20326.6221333646s|s107558b|107558|rds|local|vector|||1167.6||
+data_dir|object|82cca05d5c099b76
+tp_input|function|669d7509319370ee
+waterbalance_in|function|60636bb6d00f362e
 parameter_readin|function|0ed26c8353bfb9a5
 tp_munge_sparrow|function|b4d9cd943a9ffd5f
-daymet_lake|function|b8331e2fb16454ad
-.Random.seed|object|f72533565d80afd8
+daymet_lake|function|bcdb57bc621dc423
+.Random.seed|object|8d79d4c21ab7f04e
 lightAtten|function|36575c0d5d426c77
+HUC4_run|object|6ae9f7e4a2cf5009
 par_read|function|0b7ccdd6cbe365ae
 SPARROW_catchments|function|0bf49a4d8975bc54
+clean_df|function|d9d356d85f922f95
 doc_input|function|8c07d39fe0a28b14
 fix_pacific|function|947a34f13e4dcc94
 st_centroid_within_poly|function|fed95851e498cbd4
-model_df|function|586361e2492e1e2b
+model_df|function|f2342677e2b89ea3
 par_input|function|40042b0d36e747bb
+read_in_lakes|function|5b79dd0fea6a92e3
 huisman|function|134447fc4004a051
 ODE_huisman|function|7b33e8c5ed060235
-HUC4|stem|ef0d112b5c8a3e39|c5037b121bfe0825|2c530c1562a7fbd1|-721380384||t20209.593922673s|s57b|57|rds|local|vector|||0||
-input_df|stem|db955435084d3baa|e8788e84e308ccd0|8b2380efd1d54048|-1321206975||t20209.5945936299s|s1041195b|1041195|rds|local|vector|||57.72|[1m[22mRemoved 2683 rows containing missing values or values outside the scale range (`geom_point()`).|
-water_input|stem|a075e3b1c1566d98|a627cb9534c1a1a8|10fc89ea24612522|-545476016||t20209.5952456465s|s222320b|222320|rds|local|vector|||55.78|st_centroid assumes attributes are constant over geometries. st_centroid does not give correct centroids for longitude/latitude data|
-lake_pt|stem|79a1379a005a7585|4bbab906623b5582|8e5c4cb1a830adad|-195998175||t20209.595253869s|s186356b|186356|rds|local|vector|||0.45|st_centroid assumes attributes are constant over geometries. st_centroid does not give correct centroids for longitude/latitude data|
-doc_in|stem|b271aa19885ce750|08c4c5a8c0c9c863|f1f543aff2c394cf|365560957||t20209.595255881s|s11056b|11056|rds|local|vector|||0.05||
-par_in|stem|842a9ea92ea2efb2|cc3a141191f89e7e|81837fb85fabbcf2|670818164||t20209.5952941503s|s7408b|7408|rds|local|vector|||3.22||
-tp_in|stem|a67b0d5c49023f97|05ce420250ef128d|3fb770793ba63811|1640809376||t20209.5957440504s|s10109b|10109|rds|local|vector|||38.66||
-mod_in|stem|1061ced949320d52|3c22056183dcbe37|8d43de58ceae48dd|1569074038||t20209.5957724004s|s251114b|251114|rds|local|vector|||1.83||
-ODE_output|stem|b3c020cf979fa289|36986f19dbe59711|b9790d7ceff09b02|1350204662||t20209.6213626758s|s116151b|116151|rds|local|vector|||2210.91||
+input_df_0202|stem|609386d610eb73e2|f1fe441d73169e7f|49bdf93014af83f5|-1962504211||t20327.0130702239s|s11215994b|11215994|rds|local|vector|||55.51|NaNs produced. log-10 transformation introduced infinite values.. NaNs produced. log-10 transformation introduced infinite values.. Removed 19676 rows containing missing values or values outside the scale range (`geom_point()`).|
+input_df_0401|stem|9fb6282f9a9a88e6|32ddc9109708a797|49bdf93014af83f5|-1434167833||t20327.0135820655s|s7045225b|7045225|rds|local|vector|||43.46|Detected an unexpected many-to-many relationship between `x` and `y`. ℹ Row 31639 of `x` matches multiple rows in `y`. ℹ Row 19 of `y` matches multiple rows in `x`. ℹ If a many-to-many relationship is expected, set `relationship =   'many-to-many'` to silence this warning.. log-10 transformation introduced infinite values.. Removed 7882 rows containing missing values or values outside the scale range (`geom_point()`).|
+input_df_0402|stem|fca9e1b0c7250fb0|f58b919738a5c96b|49bdf93014af83f5|-417587686||t20327.0139731305s|s6353503b|6353503|rds|local|vector|||33.08|GDAL Message 1: organizePolygons() received a polygon with more than 100 parts. The processing may be really slow.  You can skip the processing by setting METHOD=SKIP, or only make it analyze counter-clock wise parts by setting METHOD=ONLY_CCW if you can assume that the outline of holes is counter-clock wise defined. log-10 transformation introduced infinite values.. Removed 8874 rows containing missing values or values outside the scale range (`geom_point()`).|
+water_input_0202|stem|b313df9eb1bceb85|889254508e8092bc|1213acd32e4a0772|-529793136||t20327.0144067597s|s1521752b|1521752|rds|local|vector|||36.94|st_centroid assumes attributes are constant over geometries. st_centroid does not give correct centroids for longitude/latitude data|
+lake_pt_0202|stem|d2fc11d087e3a844|1d6ae0c0c7090646|b373275d9bc5d8bd|2026817304||t20327.0144899185s|s1298286b|1298286|rds|local|vector|||6.48|st_centroid assumes attributes are constant over geometries. st_centroid does not give correct centroids for longitude/latitude data|
+water_input_0401|stem|ee9c4fb9dad7f0ae|093d1ea51329df42|a2ece9f686f54acb|1178812221||t20327.0148805286s|s859217b|859217|rds|local|vector|||33.45|st_centroid assumes attributes are constant over geometries. st_centroid does not give correct centroids for longitude/latitude data|
+lake_pt_0401|stem|9416e3776b17cd4e|bbb729d9b9a0333d|4e45850573199ad6|302290295||t20327.0148964236s|s744695b|744695|rds|local|vector|||0.99|st_centroid assumes attributes are constant over geometries. st_centroid does not give correct centroids for longitude/latitude data|
+lake_pt_0402|stem|fcf0b610b11e7f4a|bba5dd4f0ef95db7|fd2a1e6c07129511|874841168||t20327.014914867s|s685761b|685761|rds|local|vector|||1.31|st_centroid assumes attributes are constant over geometries. st_centroid does not give correct centroids for longitude/latitude data. st_point_on_surface assumes attributes are constant over geometries. st_point_on_surface may not give correct results for longitude/latitude data|
+water_input_0402|stem|4e29f39324e0d153|23ea88574dc89e5b|ac7b92edd79860dd|1948237037||t20327.0153126027s|s790427b|790427|rds|local|vector|||34.08|st_centroid assumes attributes are constant over geometries. st_centroid does not give correct centroids for longitude/latitude data|
+doc_in_0202|stem|c33fe81a70fa7d1c|595f96b2edbeaf89|b752141347b09ad5|-1852736082||t20327.0153161044s|s74977b|74977|rds|local|vector|||0.01||
+tp_in_0202|stem|e7eb949b0519b11b|99b2e4ec2c286805|0ee264de994f224e|909334193||t20327.0154458095s|s43872b|43872|rds|local|vector|||10.97||
+par_in_0202|stem|12adf974f67b3400|c25ee66010785dee|7632bcd97cd6ede5|-993862838||t20327.0154978574s|s47774b|47774|rds|local|vector|||4.1||
+doc_in_0401|stem|d67975d28cc24eab|0acc28aff907cb9c|5ae191afcc102cd8|-655950042||t20327.0154990842s|s45555b|45555|rds|local|vector|||0.02||
+tp_in_0401|stem|476e3fe7c46ec0f3|6bb9a69ace7c8ce2|d0816c95d55bd42d|267785224||t20327.0161805091s|s38286b|38286|rds|local|vector|||58.75||
+par_in_0401|stem|0fb1847be803b750|7e7a48fa52538e3b|51e7f39411614c91|-653345829||t20327.0162237131s|s21729b|21729|rds|local|vector|||3.65||
+par_in_0402|stem|f03b53991d63cd6c|2e6f6514237e9455|a0bd13ac6b8d7423|-1902077604||t20327.0162495076s|s22039b|22039|rds|local|vector|||2.11||
+tp_in_0402|stem|d080a421a980082f|325ef873d25115e1|69a8e52fba34d214|1735685491||t20327.0169315991s|s36555b|36555|rds|local|vector|||58.75||
+doc_in_0402|stem|967cd7d4dfd5dbe8|978d18e63da4b9e5|d96fac8291fa67bc|-1330713808||t20327.0169328875s|s38494b|38494|rds|local|vector|||0||
+df_in_0202|stem|fa653b677a7322b2|f086102a6ff36e38|edfc0fe8512c87a3|2063092938||t20327.0169380883s|s1688560b|1688560|rds|local|vector|||0.02||
+df_in_0401|stem|693f37fd25ce41b4|306eb009ad2bd1d5|2490ab8bece09594|1962299743||t20327.0169406554s|s964350b|964350|rds|local|vector|||0||
+df_in_0402|stem|8326f64e0904a517|8ebce02926fdd1cc|b04e6c2fa9990697|-676769035||t20327.0169434044s|s887701b|887701|rds|local|vector|||0||
+df_in2_0202|stem|883d43bcf0fa0402|a81fe26446178b2f|dc056625c33f3c5e|-1837209562||t20327.016948247s|s1688579b|1688579|rds|local|vector|||0||
+df_in2_0401|stem|7c3f7770dc307ea4|265694d02789307b|7e18399c3a9040d5|995974451||t20327.0169508016s|s964369b|964369|rds|local|vector|||0.02||
+df_in2_0402|stem|f99733ea0c7a338d|ef150dc54624c64d|4c0492c8131187f2|2048647472||t20327.0169534155s|s887722b|887722|rds|local|vector|||0||
+mod_in_0202|stem|5eb4e2a83ad7f269|2be9254c3e109e24|60af5992eb0cc821|-1084611126||t20327.01696762s|s1688559b|1688559|rds|local|vector|||0.81||
+mod_in_0401|stem|6217b07b58cafb04|b3fb7caf62376be9|58e06a6fd4b9cf02|46350502||t20327.0169761746s|s957952b|957952|rds|local|vector|||0.54||
+mod_in_0402|stem|8c3e28c56a11c559|21f6347b6a46af44|a1d1acd485a1aee7|-163665981||t20327.0169849861s|s887416b|887416|rds|local|vector|||0.54||
+ODE_output_0202|stem|ab65988e2961dfed|2cd5254de0ee28ad|7a711576435ce28d|891213631||t20327.1503831262s|s871831b|871831|rds|local|vector|||11525.35|Excessive precision requested.  scale up `rtol' and `atol' e.g by the factor 10. Returning early. Results are accurate, as far as they go. Excessive precision requested.  scale up `rtol' and `atol' e.g by the factor 10. Returning early. Results are accurate, as far as they go. Excessive precision requested.  scale up `rtol' and `atol' e.g by the factor 10. Returning early. Results are accurate, as far as they go. Excessive precision requested.  scale up `rtol' and `atol' e.g by the factor 10. Returning early. Results are accurate, as far as they go|
+ODE_output_0401|stem|97837b1049514d2a|f3288c9f49c7849e|c40a350a1cb00d83|641881191||t20327.1960312532s|s441240b|441240|rds|local|vector|||3943.84|Excessive precision requested.  scale up `rtol' and `atol' e.g by the factor 10. Returning early. Results are accurate, as far as they go. Excessive precision requested.  scale up `rtol' and `atol' e.g by the factor 10. Returning early. Results are accurate, as far as they go. Excessive precision requested.  scale up `rtol' and `atol' e.g by the factor 10. Returning early. Results are accurate, as far as they go|
+data_dir|object|82cca05d5c099b76
+tp_input|function|669d7509319370ee
+waterbalance_in|function|60636bb6d00f362e
+parameter_readin|function|0ed26c8353bfb9a5
+tp_munge_sparrow|function|b4d9cd943a9ffd5f
+daymet_lake|function|bcdb57bc621dc423
+.Random.seed|object|3de03f1db6d1fe24
+lightAtten|function|36575c0d5d426c77
+HUC4_run|object|6ae9f7e4a2cf5009
+par_read|function|0b7ccdd6cbe365ae
+SPARROW_catchments|function|0bf49a4d8975bc54
+clean_df|function|d9d356d85f922f95
+doc_input|function|8c07d39fe0a28b14
+fix_pacific|function|947a34f13e4dcc94
+st_centroid_within_poly|function|fed95851e498cbd4
+model_df|function|f2342677e2b89ea3
+par_input|function|40042b0d36e747bb
+read_in_lakes|function|5b79dd0fea6a92e3
+huisman|function|134447fc4004a051
+ODE_huisman|function|7b33e8c5ed060235

@@ -1,10 +1,14 @@
 ### Functions for target workflow
 
-
+# 
 library(deSolve) #algal growth models
 library(sf)
 library(dplyr)
-library(terra)
+require(terra)
+require(nhdplusTools)
+library(remotes)
+#install_github("USEPA/StreamCatTools", build_vignettes=FALSE)
+library(StreamCatTools)
 
 ##############################
 ## dataframe with centroid for all lakes 
@@ -242,11 +246,11 @@ doc_input <- function(input_df){
 ## Convert yearly Precipiation and Actual Evapor-Transpitation to Qin
 ## Represents Surface water and GW inputs, use the flow as input to DOC equation (instead of stream water)
 
-waterbalance_in <- function(input_df){
+waterbalance_in <- function(input_df, data_dir){
   require(magrittr)
   require(readr)
   #Read in HydroBasin file
-  file_path_hb10 <- "1_RawData/HydroBasin_wLakes/hyAtlas_clippedtoNorAmer.shp" #HydroAtlas database
+  file_path_hb10 <- paste0(data_dir,"/1_RawData/HydroBasin_wLakes/hyAtlas_clippedtoNorAmer.shp") #HydroAtlas database
   
   #HydroBasin HUC 10 Basin 
   hb_10 <- st_read(file_path_hb10) |> 
@@ -278,9 +282,10 @@ waterbalance_in <- function(input_df){
 ## SET UP Base NHD HR Lake Files 
 #####################################
 
-read_in_lakes <- function(HUC4 = "0202", 
-                          NHD_path = "1_RawData/NHDPlus", 
-                          data_path = file.path("1_RawData/LakeChar")){
+read_in_lakes <- function(HUC4 = HUC4, 
+                          NHD_path = paste0(data_dir,"/1_RawData/NHDPlus"), 
+                          data_path = file.path(paste0(data_dir,"/1_RawData/LakeChar")))
+                          {
   library(nhdplusTools)
   library(sf)
   library(tidyverse)
@@ -566,7 +571,7 @@ SPARROW_catchments <- function(){
 }
 
 #Tar function to find TP concentration for all the files. 
-tp_input <- function(input_centroid, tp_poly){
+tp_input <- function(input_centroid, tp_poly, data_dir){
   
   require(readr)
   #plan joining the outputs together 
@@ -576,7 +581,7 @@ tp_input <- function(input_centroid, tp_poly){
   lake_region = st_join(lake_centr_TP, tp_poly) 
   #Download proper region SPARROW files, then join for TP concentration, right now assumes that all are in the same refgion, which seems correct if looping through HUC04s
   region = first(lake_region$region)
-  sparrow_df <- read_rds(paste0("2_DataProcessing/SPARROW_sf_", region ,".RDS")) 
+  sparrow_df <- read_rds(paste0(data_dir, "/2_DataProcessing/SPARROW_sf_", region ,".RDS")) 
 
   #Link inputs with catchment TP concentration 
   TP <- st_join(x = lake_centr_TP, y = sparrow_df)
@@ -619,9 +624,15 @@ st_centroid_within_poly <- function (poly) {
 ##############################
 ## Model Dataframe Set up
 
+clean_df <- function(df, HUC4){
+  colnames(df) <- gsub(paste0("_",HUC4),"" , colnames(df))
+ return(df) 
+}
+
 model_df <- function(mod_in, HUC4){
   require(tidyr)
-  mod_in %>%
+  
+  mod_in <- mod_in %>%
   dplyr::filter(maxdepth > 0)%>%
   drop_na(doc_in, par_in, tp_in, maxdepth)
   
