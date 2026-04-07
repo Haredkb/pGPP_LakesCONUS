@@ -23,6 +23,7 @@ par_read <- function(){ #thus makes the tif a target and only needs to be run on
   require(raster)
   PAR_Annual <- raster("3_DerivedData/usa_modis_mean_2015_2023.tif")
 }
+
 par_input <- function(input_sf, PAR_Annual) {
   require(raster)
   require(sf)
